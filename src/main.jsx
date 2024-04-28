@@ -4,6 +4,7 @@ import CssBaseline from '@mui/material/CssBaseline';
 import { ThemeProvider } from '@mui/material/styles';
 import App from './App';
 import ErrorPage from "./components/error-page";
+import About from "./components/about";
 import theme from './theme';
 import {
   createBrowserRouter,
@@ -16,6 +17,10 @@ const router = createBrowserRouter([
     element: <App />,
     errorElement: <ErrorPage />,
   },
+  {
+    path: "about",
+    element: <About />,
+  }
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
