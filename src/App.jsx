@@ -13,7 +13,7 @@ function App() {
       <h1>Cootie Catcher</h1>
       <Box sx={{p:1}}>
         <Button sx={{width:150}}
-          variant="contained">Play Game</Button>
+          variant="contained" href='game'>Play Game</Button>
       </Box>
       <Box sx={{p:1}}>
         <Button sx={{width:150}}
