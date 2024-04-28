@@ -1,19 +1,29 @@
 import * as React from 'react';
-import { createRoot } from 'react-dom/client';
+import * as ReactDOM from "react-dom/client";
 import CssBaseline from '@mui/material/CssBaseline';
 import { ThemeProvider } from '@mui/material/styles';
 import App from './App';
+import ErrorPage from "./components/error-page";
 import theme from './theme';
+import {
+  createBrowserRouter,
+  RouterProvider,
+} from "react-router-dom";
 
-const rootElement = document.getElementById('root');
-const root = createRoot(rootElement);
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <App />,
+    errorElement: <ErrorPage />,
+  },
+]);
 
-root.render(
+ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <ThemeProvider theme={theme}>
       {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
       <CssBaseline />
-      <App />
+      <RouterProvider router={router} />
     </ThemeProvider>
   </React.StrictMode>,
 );

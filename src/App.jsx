@@ -1,6 +1,9 @@
 import Button from '@mui/material/Button';
 import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
+import React from 'react';
+import About from './components/About';
+import { Routes, Route } from 'react-router-dom';
 import './App.css'
 
 function App() {
@@ -18,6 +21,7 @@ function App() {
         variant="outlined">Learn More</Button>
       </Box>
       </Container>
+
     </>
   )
 }
