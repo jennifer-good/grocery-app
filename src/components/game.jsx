@@ -1,5 +1,11 @@
 import React from 'react';
+import Header from './header';
 
 export default function Game() {
-  return <h2>Game</h2>;
+  return (
+    <>
+    <Header />
+    <h2>Game</h2>
+    </>
+  )
 }
