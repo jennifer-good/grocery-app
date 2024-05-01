@@ -11,11 +11,9 @@
   transition: filter 300ms;
 }
 .logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+  filter: drop-shadow(0 0 2em #386679);
 }
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
+
 
 .logo-home {
   height: 10em;
@@ -34,7 +32,7 @@
 .header {
   text-align: center;
   margin: 0;
-  padding: 0;
+  padding: 1em;
 }
 
 @keyframes logo-spin {
