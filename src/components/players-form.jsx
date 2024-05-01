@@ -17,7 +17,14 @@ const PlayersForm = ({ addPlayer }) => {
     }
     return (
         <form onSubmit={handleSubmit}>
-            <Input value={userInput} type="text" onChange={handleChange} placeholder="Enter Name"/>
+            <Input sx={{
+                backgroundColor: 'background.paper',
+                margin: '.5em',
+                padding: '.1em',
+                color: 'white',
+            }} 
+            
+            value={userInput} type="text" onChange={handleChange} placeholder="Enter Name"/>
             <Button variant="contained" className="player-button">Add Player</Button>
         </form>
     );

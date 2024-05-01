@@ -3,7 +3,17 @@ import Card from '@mui/material/Card';
 
 const Player = ({player}) => {
     return (
-        <Card>
+        <Card sx= {{
+            margin: '.5em',
+            backgroundColor: 'secondary.dark',
+            fontSize: '18',
+            maxWidth: '15em',
+            padding: '1em',
+            display: 'flex',
+            alignItems: 'center',
+            justifyItems: 'center',
+        }}
+        >
             {player.name}
         </Card>
     );
