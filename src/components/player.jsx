@@ -1,10 +1,11 @@
 import React from 'react';
+import Card from '@mui/material/Card';
 
 const Player = ({player}) => {
     return (
-        <div>
+        <Card>
             {player.name}
-        </div>
+        </Card>
     );
  };
   

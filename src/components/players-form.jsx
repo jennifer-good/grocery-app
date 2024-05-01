@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import Button from '@mui/material/Button';
+import Input from '@mui/material/Input';
 
 const PlayersForm = ({ addPlayer }) => {
 
@@ -15,8 +17,8 @@ const PlayersForm = ({ addPlayer }) => {
     }
     return (
         <form onSubmit={handleSubmit}>
-            <input value={userInput} type="text" onChange={handleChange} placeholder="Enter name..."/>
-            <button>Submit</button>
+            <Input value={userInput} type="text" onChange={handleChange} placeholder="Enter Name"/>
+            <Button variant="contained" className="player-button">Add Player</Button>
         </form>
     );
 };

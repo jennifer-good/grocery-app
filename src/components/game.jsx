@@ -1,11 +1,10 @@
 import React, { useState } from 'react';
 import Header from './header';
 import Players from './players';
-import data from '../assets/data.json';
 import PlayersForm from './players-form.jsx';
  
 function Game() {
-  const [ players, setPlayers ] = useState(data);
+  const [ players, setPlayers ] = useState([]);
 
   const addPlayer = (userInput ) => {
     let copy = [...players];
@@ -17,8 +16,8 @@ function Game() {
     <>
     <Header />
     <h2>Game</h2>
-    <Players players={players}/>
     <PlayersForm addPlayer={addPlayer}/>
+    <Players players={players}/>
     </>
   )
 }
