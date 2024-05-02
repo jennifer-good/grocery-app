@@ -7,6 +7,10 @@ const PlayersForm = ({ addPlayer }) => {
     const [ userInput, setUserInput ] = useState('');
 
     const handleChange = (e) => {
+        if(e==""){
+            alert("Name must be filled in");
+            return false;
+        }
         setUserInput(e.currentTarget.value)
     }
 
@@ -17,15 +21,8 @@ const PlayersForm = ({ addPlayer }) => {
     }
     return (
         <form onSubmit={handleSubmit}>
-            <Input sx={{
-                backgroundColor: 'background.paper',
-                margin: '.5em',
-                padding: '.1em',
-                color: 'white',
-            }} 
-            
-            value={userInput} type="text" onChange={handleChange} placeholder="Enter Name"/>
-            <Button variant="contained" className="player-button">Add Player</Button>
+            <input className='player-input' value={userInput} type="text" onChange={handleChange} placeholder="Enter Name"/>
+            <button className='player-button' >Add Player</button>
         </form>
     );
 };

@@ -1,3 +1,4 @@
+
 #root {
   text-align: center;
   height:100vh;
@@ -60,4 +61,17 @@
 
 .player-button {
   margin-left: 1em;
+  padding: 1em;
+  background-color:#386679;
+  color:white;
+  border-radius: .3em;
+  filter: brightness(100%);
+  border-style:none;
+}
+.player-button:hover {
+  filter:brightness(80%);
+}
+
+.player-input {
+  padding: .9em;
 }
