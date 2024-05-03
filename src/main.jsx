@@ -5,6 +5,7 @@ import { ThemeProvider } from '@mui/material/styles';
 import App from './App';
 import ErrorPage from "./components/error-page";
 import About from "./components/about";
+import AddPlayers from "./components/add-players";
 import Game from "./components/game";
 import theme from './theme';
 import {
@@ -21,6 +22,10 @@ const router = createBrowserRouter([
   {
     path: "about",
     element: <About />,
+  },
+  {
+    path: "add-players",
+    element: <AddPlayers />,
   },
   {
     path: "game",

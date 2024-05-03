@@ -14,7 +14,7 @@ function App() {
       <img src={Logo} alt="Logo" className="logo-home"/>
       <h1>Cootie Catcher</h1>
       <Box sx={{p:1}}>
-        <Link to={'game'}><Button sx={{width:150}} variant="contained">Play Game</Button></Link>
+        <Link to={'add-players'}><Button sx={{width:150}} variant="contained">Play Game</Button></Link>
       </Box>
       <Box sx={{p:1}}>
         <Link to={'about'}><Button sx={{width:150}} variant="outlined">Learn More</Button></Link>
