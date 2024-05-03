@@ -8,7 +8,7 @@ const Player = ({player}) => {
             backgroundColor: 'secondary.dark',
             fontSize: '18',
             maxWidth: '15em',
-            padding: '1em',
+            padding: '.7em',
             display: 'flex',
             alignItems: 'center',
             justifyItems: 'center',

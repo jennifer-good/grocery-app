@@ -75,3 +75,22 @@
 .player-input {
   padding: .9em;
 }
+
+.game-button {
+  padding: 1.5em;
+  background-color:#161414;
+  color:white;
+  border-radius: .3em;
+  filter: brightness(100%);
+  border: #386679;
+  border-style: solid;
+  position:fixed;
+  font-size:large;
+  bottom:2em;
+  left:25%;
+  width:50%;
+}
+.game-button:hover {
+  filter: drop-shadow(0 0 1em #386679);
+  color:lightgray;
+}

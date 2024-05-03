@@ -18,6 +18,7 @@ function Game() {
     <h2>Game</h2>
     <PlayersForm addPlayer={addPlayer}/>
     <Players players={players}/>
+    <button className='game-button'>Start Game</button>
     </>
   )
 }
