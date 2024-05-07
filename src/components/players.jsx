@@ -15,7 +15,7 @@ const Players = ({players}) => {
       >
           {players.map(player => {
               return (
-                  <Player player={player} />
+                  <Player key={player.id} player={player} />
               )
           })}
       </Container>
