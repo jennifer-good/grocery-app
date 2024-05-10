@@ -1,6 +1,6 @@
 import React from "react";
 import { Box } from "@mui/material";
-import Logo from '../assets/cootie-logo.svg';
+import Logo from '../../public/assets/cootie-logo.svg';
 import { Link } from 'react-router-dom';
 
 //main header for each page with logo that links to the homepage to start over

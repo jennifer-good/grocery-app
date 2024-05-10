@@ -1,11 +1,10 @@
 import React from 'react';
 import './SpriteAnimation.css'; 
-import cootieSprite from '../assets/cootie-sprite.png';
 
 const SpriteAnimation = () => {
   return (
     <div className="sprite-container">
-      <div className="sprite" style={{ backgroundImage: `url(${cootieSprite})` }}></div>
+      <div className="sprite" style={{ backgroundImage: `url('/assets/sprite-sheet.png')` }}></div>
     </div>
   );
 };

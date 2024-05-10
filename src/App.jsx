@@ -2,7 +2,7 @@ import Button from '@mui/material/Button';
 import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
 import React from 'react';
-import Logo from './assets/cootie-logo.svg';
+import Logo from '../public/assets/cootie-logo.svg';
 import { Link } from 'react-router-dom';
 import './App.css'
 
