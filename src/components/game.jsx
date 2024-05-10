@@ -3,6 +3,7 @@ import { useLocation } from 'react-router-dom';
 import Header from './header.jsx'
 import { Card, Button, Container } from '@mui/material';
 import promptData from '../assets/test-data.jsx';
+import SpriteAnimation from './animation/sprite-animation.jsx';
 
 //main page for game to display the chosen player and prompt per game
 export default function Game() {
@@ -38,6 +39,7 @@ export default function Game() {
       <Container sx={{
         padding:'1em',
       }}>
+        <SpriteAnimation />
         {randomPlayer && (
           <Card>
             <p>Player: {randomPlayer.name}</p>

@@ -1,0 +1,23 @@
+.sprite-container {
+    width: 200px; /* Adjust container dimensions */
+    height: 200px;
+    position: center;
+    overflow: hidden;
+  }
+  
+  .sprite {
+    width: 200px; /* Adjust image dimensions */
+    height: 200px;
+    background-size: 2602px 200px; /* Set size of sprite sheet */
+    animation: playAnimation 1s steps(13) infinite; /* Adjust animation duration and steps */
+  }
+  
+  @keyframes playAnimation {
+    from {
+      background-position: 0 0; /* Start position of sprite sheet */
+    }
+    to {
+      background-position: -400px 0; /* End position of sprite sheet */
+    }
+  }
+  
