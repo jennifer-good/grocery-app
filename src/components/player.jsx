@@ -1,6 +1,7 @@
 import React from 'react';
 import Card from '@mui/material/Card';
 
+//on the add players screen this is the card for one player in the game
 const Player = ({player}) => {
     return (
         <Card sx= {{

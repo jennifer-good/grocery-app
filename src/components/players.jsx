@@ -2,7 +2,7 @@ import React from 'react';
 import Player from './player.jsx';
 import Container from '@mui/material/Container';
 
-
+//This is the area containing all of the players for the add players screen and maps the player to the array storing them
 const Players = ({players}) => {
   return (
       <Container sx={{

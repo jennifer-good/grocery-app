@@ -2,6 +2,7 @@ import React from 'react';
 import Header from './header';
 import { Card, Container } from '@mui/material';
 
+//information page
 export default function About() {
   return (
 <>

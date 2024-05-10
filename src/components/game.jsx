@@ -4,14 +4,20 @@ import Header from './header.jsx'
 import { Card, Button, Container } from '@mui/material';
 import promptData from '../assets/test-data.jsx';
 
+//main page for game to display the chosen player and prompt per game
 export default function Game() {
+  //set variables for selecting a random player
   const [randomPlayer, setRandomPlayer] = useState(null);
   const location = useLocation();
   const players = location.state?.players || [];
+  
+  //variable to keep track of the round
   const [myRound, setMyRound] = useState(1);
 
+  //set variables to get random prompt
   const [randomPrompt, setRandomPrompt] = useState(null);
 
+  //function to get random player and random prompt or return error if no players
   const getRandomPlayerPrompt = () => {
     if (players.length > 0) {
       const randomIndex = Math.floor(Math.random() * players.length);

@@ -13,6 +13,7 @@ import {
   RouterProvider,
 } from "react-router-dom";
 
+//set the routes for the site
 const router = createBrowserRouter([
   {
     path: "/",

@@ -6,6 +6,7 @@ import Logo from './assets/cootie-logo.svg';
 import { Link } from 'react-router-dom';
 import './App.css'
 
+//Homescreen of the game
 function App() {
   
   return (
