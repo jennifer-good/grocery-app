@@ -2,19 +2,19 @@ import { createTheme } from '@mui/material/styles';
 
 const theme = createTheme({
   palette: {
-    //mode: 'dark',
+    mode: 'dark',
     primary: {
-      light: '#5F8493',
-      main: '#386679',
-      dark: '#274754',
+      light: '#b5e3cc',
+      main: '#76c49d',
+      dark: '#478164',
     },
     secondary: {
-      main: '#794c92',
-      dark: '#543566',
+      main: '#deda89',
+      dark: '#b0b418',
     },
     background: {
-      default: '#1e1b1b',
-      paper: '#161414',
+      default: '#181b1c',
+      paper: '#232829',
     },
     text: {
       primary: '#f1f4f5',
@@ -29,6 +29,9 @@ const theme = createTheme({
       main: '#2394c7',
       dark: '#18678B',
     },
+    textField: {
+      input: 'f1f4f5'
+    }
   },
 });
 

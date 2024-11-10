@@ -5,8 +5,7 @@ import { ThemeProvider } from '@mui/material/styles';
 import App from './App';
 import ErrorPage from "./components/error-page";
 import About from "./components/about";
-import AddPlayers from "./components/add-players";
-import Game from "./components/game";
+import NewUser from './components/new-user';
 import theme from './theme';
 import {
   createBrowserRouter,
@@ -21,17 +20,15 @@ const router = createBrowserRouter([
     errorElement: <ErrorPage />,
   },
   {
-    path: "about",
+    path: "/about",
     element: <About />,
+    errorElement: <ErrorPage />,
   },
   {
-    path: "add-players",
-    element: <AddPlayers />,
+    path: "/new-user",
+    element: <NewUser />,
+    errorElement: <ErrorPage />,
   },
-  {
-    path: "game",
-    element: <Game />,
-  }
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
