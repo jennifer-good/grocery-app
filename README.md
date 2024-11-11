@@ -1,13 +1,10 @@
 This app uses React Vite framework with Mui for styling
 
-App for practicing React and creating a game.
-
-The game is for having fun and getting to know friends with random dare and question prompts for a randomly selected player.
+App is for gathering preferences from a user and recommending a grocery shopping route and list based on current prices.
 
 To run the game locally you will need to 
 - clone into it
 - npm install
-- npm install @mui/material @emotion/react @emotion/styled
 - to get it started on localhost:5173 enter npm run dev
 
 Links for Vite:
